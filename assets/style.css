@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+header{
+    background-image:url('./imagens/imagem1.png') ;
+    width: 100%;
+    max-width: 100%;
+    max-height: 30em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    gap: 2em;
+    max-width: 90%; 
+}
+.cabecalho p{
+    max-width: 40em;
+}
+.cabecalho h1{
+    font-family: Luckiest Guy, cursive;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+#buttons-container{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+#button1{
+    border: solid 1px white;
+    border-radius: 15px;
+    background-color: white;
+    color: rgba(35, 39, 42, 1);
+    padding: 10px;
+}
+
+#button2{
+    border: solid 1px black;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+#section-one{
+    display: flex;
+    justify-content: center;
+    margin-left: 4em;
+}
+    
+#section-item-titulo{
+    font-family: Open Sans;
+    font-size: 2.5rem;
+    font-weight: 800;
+    max-width: 17rem;
+    margin-top: 1.5rem;
+    color: rgba(35, 39, 42, 1);
+}
+
+#section-item-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+#section-item-image img {
+    width: 100%;
+    height: auto;
+    max-width: 600px; 
+}
+#section-item-words {
+    flex: 1;
+    max-width: 600px; 
+}
+
+#section-item-paragrafo{
+    max-width: 18rem;
+    margin-top: 1em;
+    color: rgba(35, 39, 42, 1);
+}
+
+.section-two{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    gap: 2.5em;
+    margin-top: 2rem;
+}
+
+.section-item-words-two{
+    font-family: Open Sans;
+    font-size: 2.5rem;
+    font-weight: 800;
+    max-width: 15rem;
+    color: rgba(35, 39, 42, 1);
+    text-align: left;
+}
+
+.section-item-paragrafo-two{
+    max-width: 18rem;
+    margin-top: 1em;
+    color: rgba(35, 39, 42, 1);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: left;
+}
+
+.section-item-image-two {
+    max-width: 100%;
+}
+
+.section-item-image-two img {
+    width: 100%;
+    height: auto;
+    max-width: 600px; 
+}
+
+.final-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 5em;
+    gap: 2em;
+}
+
+.final-section-words{
+    font-family: Luckiest Guy, cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 40rem;
+}
+
+.final-section-paragrafo{
+    font-family: Open Sans;
+    max-width: 45rem;
+    color: rgba(35, 39, 42, 1);
+}
+
+#imagem-footer{
+    width: 100%;
+    flex-shrink: 0;
+}
+
+#imagem-footer img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+footer{
+    margin-top: auto;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header{
+        min-height: 20em;
+        padding: 1em;
+        background-position: top;
+    }
+    .cabecalho h1{
+        font-size: 1.5rem;
+        text-align: start;
+    }
+
+    .cabecalho p{
+        text-align: start;
+    }
+    #buttons-container{
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    #section-one{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+
+    #section-item-titulo{
+        display: flex;
+        word-wrap: break-word;
+        align-items: flex-start;
+        font-size: 1.4rem;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    #section-item-image img {
+        max-width: 100%; 
+    }
+
+    .section-two{
+        display: flex;
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    .section-item-words-two {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.4rem;
+        text-align: left;
+        margin-right: 2.2em;
+        order: 2;
+    }
+
+    .section-item-image-two {
+        order: 1;
+    }
+
+    .final-section-words{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 650px){
+    
+    .final-section-words{
+        font-size: 1rem;
+        max-width: 18rem;
+        text-align: left;
+    }
+
+    .final-section-paragrafo{
+        text-align: left;
+        max-width: 18rem;
+    }
+}
